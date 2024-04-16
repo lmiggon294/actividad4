@@ -22,7 +22,7 @@ public class Alumno {
 	
 	public Alumno(int identificador1, int identificador2, int identificador3, String nombre, String dni, int anio_nac) {
 		this.nombre = nombre;
-		this.dni = dni;
+		this.dni = (comprobarDNI(dni)) ? dni : "12345678A";
 		this.anio_nac = anio_nac;
 		this.asign1 = new Asignatura(identificador1);
 		this.asign2 = new Asignatura(identificador2);
